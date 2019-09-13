@@ -1,0 +1,41 @@
+int led = 2;
+
+char cmd[100];
+int cmdIndex;
+
+void exeCmd() {
+
+  if(strcmp(cmd, "led 1")==0) {
+    digitalWrite(led, HIGH);
+  }
+  if(strcmp(cmd, "led 0")==0) {
+    digitalWrite(led, LOW);
+  }
+}
+
+
+void setup() {
+  
+  delay(500);
+  Serial.begin(38400);
+  pinMode(led, OUTPUT);
+  digitalWrite(led, LOW);
+  cmdIndex=0;
+}
+
+void loop() {
+  if(Serial.available()) {
+    char c = (char)Serial.read();
+
+    if(c=='\n') {
+      cmd[cmdIndex] = 0;
+      exeCmd();
+      cmdIndex=0;
+    }
+    else {
+      cmd[cmdIndex]=c;
+      if(cmdIndex<99) cmdIndex++;
+      
+    }
+  }
+}

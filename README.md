@@ -2,7 +2,7 @@
 
 Have a Problem/ Resource that's not listed , Submit an Issue ( https://help.github.com/en/articles/creating-an-issue ) 
 
-Make sure you include all proper details and the solutions you have tried before you have created an issue.
+Make sure you include all proper details and the solutions you have tried before you create an issue.
 
 # Troubleshooting 
 
@@ -84,6 +84,33 @@ Ever Found your Board to be hot ? Get a New One.
 
 Try writting Code setting l1 HIGH and l2 LOW and check if the motors rotate. Because if it doesn't then the problem is usually with the Motor driver and a motor driver can be destroyed easily. So , Make sure you don't short it / Power it on before checking your circuit twice.
 
+```
+int l1 = 6;
+int r1 = 5;
+int l2 = 4;
+int r2 = 3;
+
+void setup() {
+  
+  delay(500);
+  Serial.begin(9600);
+  pinMode(l1, OUTPUT);
+  pinMode(l2, OUTPUT);
+  pinMode(r1, OUTPUT);
+  pinMode(r2, OUTPUT);
+  digitalWrite(l1, HIGH);
+  digitalWrite(r1, HIGH);
+  digitalWrite(l2, LOW);
+  digitalWrite(r2, LOW);
+}
+
+void loop() {
+}
+
+```
+See any movement ? Then Motor Driver is working Properly ( Make sure the Wires touch the Metal Contact in the motors) 
+
+Loose Connection was one problem noticed in the session. 
 
 ### Arduino 
 

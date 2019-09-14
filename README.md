@@ -24,7 +24,7 @@ Found Some Module / IC to be hot ?
 
 Not so Great news !! You would have burnt it , Check out the Resources Section on where to buy a new one.
 
-### Bluetooth 
+### Testing Bluetooth 
 
 ```
 char Incoming_value = 0;                //Variable for storing Incoming_value
@@ -78,7 +78,7 @@ Remember you need to press the button while uploading the code to switch it to A
 
 After you upload the Code , you need to Close and open your Serial Monitor for it to work. 
 
-### Motor Driver 
+### Testing Motor Driver 
 
 Ever Found your Board to be hot ? Get a New One.
 
@@ -112,7 +112,7 @@ See any movement ? Then Motor Driver is working Properly ( Make sure the Wires t
 
 Loose Connection was one problem noticed in the session. 
 
-### Arduino 
+### Testing Arduino 
 
 If Bluetooth and Motor Driver Lights up , but you cannot upload code to Arduino and if the IC is hot , you would have probably burnt it , *but shorting an Arduino isn't easy , they have inbuilt mechanisms to prevent it* so see if there are other issues as mentioned above before assuming that you have burnt your Arduino.
 

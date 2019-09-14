@@ -120,6 +120,15 @@ If Bluetooth and Motor Driver Lights up , but you cannot upload code to Arduino 
 
 ## What Next ? 
 
+Get an Arduino Started Kit and Use The Following Sites to look for projects to get started;
+
+https://www.instructables.com/
+
+https://www.hackster.io/
+
+https://hackaday.com/
+
+
 ## Resources 
 
 Motor Driver -> https://www.amazon.in/Adraxx-L293D-Motor-Driver/dp/B01NAJHRJ0/ref=sr_1_10?keywords=L293d&qid=1568454815&s=gateway&sr=8-10 

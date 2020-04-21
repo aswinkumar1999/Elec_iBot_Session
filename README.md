@@ -6,7 +6,7 @@ Make sure you include all proper details and the solutions you have tried before
 
 # Troubleshooting 
 
-Remember the Sequence it works ?? ( NO ? Check the Document )
+Remember the Sequence it works ?? ( NO ? Check the Document ( Elec-iBot Session (1).pdf )
 
 Bluetooth --> Arduino --> Motor Driver 
 
